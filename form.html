@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="html_form">
+    <form onsubmit="return validation()" name="Submit-googlesheet">
+      <h2>Register Now</h2>
+      <input type="text"  id="username" name="Name" placeholder="Full Name" required><br>
+      <span id="errorname" style="color: red;"></span>
+      <input type="email" id="email" name="Email Id" placeholder=" Email Id" required><br>
+      <span id="erroremail" style="color: red;"></span>
+      <input type="number" id="number" name="Number" placeholder=" Contact Number" required><br>
+      <span id="errornumber" style="color: red;"></span>
+      <select name="Branch" required>
+        <option>---Branch---</option>
+        <option>CSE/IT</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>ME</option>
+      </select><br>
+      <select name="Year" required>
+        <option>---year---</option> 
+        <option>1st</option>
+        <option>2nd</option>
+        <option>3rd</option>
+        <option>4th</option>
+      </select><br>
+      <input type="text" name="College name" placeholder="college name" required><br>
+      <button type="submit">Register</button><br>
+      <button type="reset">Refresh</button>
+    </form>
+  </div>
+  <script type="Text/javascript">
+    function validation() {
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var number = document.getElementById('number').value;
+
+    var usercheck = /^[A-Za-z]{3,30}$/;
+    var emailcheck = /^[A-Za-z_0-9.]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+    var numbercheck = /^[6789][0-9]{9}$/; 
+
+    if(usercheck.test(username)){
+        document.getElementById('errorname').innerHTML = " ";
+    }else{
+        document.getElementById('errorname').innerHTML = "**Invalid name";
+    }
+
+    if(emailcheck.test(email)){
+        document.getElementById('erroremail').innerHTML = " ";
+    }else{
+        document.getElementById('erroremail').innerHTML = "**Invalid Email";
+    }
+
+    if(numbercheck.test(number)){
+        document.getElementById('errornumber').innerHTML = " ";
+    }else{
+        document.getElementById('errornumber').innerHTML = "**Invalid Number";
+        return false;
+    }
+}
+  </script>
+<script type="text/Javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwoG3yyUPEDPm6YPa_uo-tinHJi2d-rMUU4EluNTqryow1KIQcdeW7B4Qs8Tc4GbVQs8g/exec'
+ const form = document.forms['Submit-googlesheet']
+
+   form.addEventListener('submit', e => {
+       e.preventDefault()
+       fetch(scriptURL, {
+               method: 'POST',
+               body: new FormData(form)
+           })
+           .then(response => alert(
+               "Thanks for you valuable feedback!!!"))
+           .catch(error => console.error('Error!', error.message))
+   })
+
+   const form = document.forms['google-sheet']
+
+   form.addEventListener('submit', e => {
+       e.preventDefault()
+       fetch(scriptURL, {method: 'POST',body: new FormData(form)})
+           .then(response => alert("Thanks for submitting form We will contact you later"))
+           .catch(error => console.error('Error!', error.message))
+   })
+  </script>
+</body>
+</html>

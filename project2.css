@@ -1,0 +1,628 @@
+.nav{
+    background-color: white;
+    z-index: 9;
+    /* padding: 10px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    float: left;
+    width: 80%;
+}
+.logo img{
+    padding: 10px;
+}
+.nav_side{
+    float: right;
+    width: 20%;
+    margin-top: 30px;
+    /* text-align: left; */
+}
+.nav_side a{
+ text-decoration: none;
+ margin-right: 20px;
+ color: black;
+ font-weight: bold;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size: 15px;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ text-align: center;
+
+}
+.nav_side a:hover{
+    color: orange;
+    text-decoration: underline;
+    transition: all 1s ease;
+}
+.main{
+    background-image: url("Deep-Blue-Sea.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+    opacity: 0.9;
+}
+.main .main_content{
+    padding-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.main .main_content h2{
+    color: snow;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 25px;
+    
+}
+.main .main_content h2 span{
+    font-size: 15px;
+    opacity: 0.8;
+    color:aliceblue;
+   font-weight: 400;
+   line-height: 20px;
+}
+.main .main_content .btn{
+    margin: 50px; 
+    text-align:center; 
+}
+.main .main_content .btn a{
+    text-decoration: none;
+    margin: 450px;
+    padding: 10px 20px;
+    background-color: rgb(236, 60, 60);
+    color: snow;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.main .main_content .btn a:hover{
+    background-color: black;
+    color:aqua;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: .5s;
+}
+.product{
+    padding-bottom: 50px;
+}
+.product h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+.product .product_container{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.product .product_container .item{
+    width: 33.33%;
+    margin: 10px;
+    height: auto;
+}
+.product .product_container .item:hover{
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+
+.product .product_container .item .item_img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.product .product_container .item .item_img img{
+    width: 100%;
+    height: 250px;
+}
+.product .product_container .item .item_content{
+    text-align: center;
+}
+.product .product_container .item .item_content h3{
+    padding: 10px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product .product_container .item .item_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product .product_container .item .item_content a{
+   text-decoration: none;
+    margin: 100px;
+    padding: 10px 20px;
+    background-color: rgb(236, 60, 60);
+    color: snow;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.product .product_container .item .item_content a:hover{
+    background-color: black;
+    color:aqua;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: .5s;  
+}
+.product .product_btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.product .product_btn a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(236, 60, 60);
+    color: snow;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.product .product_btn a:hover{
+    background-color: black;
+    color:aqua;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: .5s;  
+}
+.keypoint{
+    padding: 50px;
+}
+.keypoint h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+.keypoint .key_container{
+    display: flex;
+}
+.keypoint .key_container .key_content{
+    width: 40%;
+    padding: 20px;
+    float: left;
+}
+.keypoint .key_container .key_content li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-left: 2px solid orange;
+    color: black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.keypoint .key_container .key_img{
+    width: 40%;
+    float: right;
+    margin-left: 250px;
+}
+.keypoint .key_container .key_img img{
+    width: 100%;
+}
+.testi{
+    padding: 50px;
+}
+
+.testi h2{
+    color:black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.testi .testi_container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.testi .testi_container .carousel-inner{
+    background-color: white;
+    box-shadow: none;
+}
+
+.testi .testi_container .item{
+    width:100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: none;
+}
+
+.testi .testi_container .item .item_img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+
+}
+
+.testi .testi_container .item .item_img img{
+    width: 100px;
+    height: 100px;
+    border-radius:50% ;
+    
+
+}
+
+.testi .testi_container .item .item_content{
+    text-align: center;
+}
+
+
+.testi .testi_container .item .item_content h3{
+    padding: 10px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.testi .testi_container .item .item_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.team{
+    padding: 50px;
+}
+.team h2{
+    color:black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;  
+}
+.team .team_container{
+    display: flex;
+}
+.team .team_container .team_video{
+    width: 50%;
+    padding: 20px;
+}
+.team .team_container .team_video video{
+    width: 100%;
+    border: 3px solid rgb(244, 214, 159);
+    outline: none;
+}
+.team .team_container .team_content{
+    width: 40%;
+    padding: 20px;
+    margin-left: 50px;
+}
+.team .team_container .team_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.feed{
+    padding: 50px;
+    background-image: url(review_bgimage.png);
+    background-size: cover;
+}
+.feed h2{
+    color:white;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.feed .feed_form{
+    text-align: center;
+}
+.feed .feed_form form{
+    padding: 20px;
+}
+.feed .feed_form form input{
+   width: 30%; 
+   margin: 10px;
+   padding: 8px;
+   outline: none;
+   border: none;
+}
+.feed .feed_form form textarea{
+    width: 30%; 
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+ }
+ .feed .feed_form form button{
+    width: 30%; 
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+}
+.about_us{
+    padding: 100px;
+}
+.about_us h2{
+    color: orange;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.about_us p{
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+.contact_container{
+    padding: 100px;
+}
+.contact_container h2{
+    color: orange;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.contact_container .g_map{
+    margin: 30px;
+    border: 2px solid black;
+    
+}
+.contact_container .contact_content{
+    padding: 20px;
+}
+.contact_container .contact_content p{
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+footer{
+    background-color: #99A3A4;
+    padding: 50px;
+}
+footer .footer_logo{
+    text-align: center;
+    justify-content: center;
+    /* border-radius: 25px; */
+}
+footer .footer_logo img{
+    border-radius: 25px;
+ }
+footer .pages{
+    text-align: center;
+}
+footer .pages h3{
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+footer .pages a{
+    text-decoration: none;
+    margin:10px;
+    color: blue;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer .pages a:hover{
+    color: white;
+}
+
+footer .doc{
+    text-align: center;
+}
+footer .doc h3{
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+footer .doc a{
+    text-decoration: none;
+    margin:10px;
+    color: blue;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer .doc a:hover{
+    color: white;
+}
+
+footer .social{
+    text-align: center;
+}
+footer .social h3{
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+footer .social a{
+    text-decoration: none;
+    font-size: 30px;
+    color: blue;
+    margin: 10px;
+}
+footer .social a:hover{
+    color: white;
+}
+
+footer .contact{
+    text-align: center;
+}
+footer .contact h3{
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+footer .contact a{
+    text-decoration: none;
+    font-size: 30px;
+    color: blue;
+    margin: 10px;
+}
+footer .contact a:hover{
+    color: white;
+}
+footer p{
+    text-align: center;
+}
+.blog_css img{
+    margin: 100px;
+    padding: 30px;  
+}
+/* @media only screen and (max-width: 1140px){
+    .nav{
+        flex-direction: column;
+    }
+} */
+/* Responsive styles */@media (max-width: 1140px) {
+    .nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav_side {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main .main_content {
+        padding-top: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .main .main_content h2 {
+        font-size: 40px;
+    }
+
+    .product .product_container .item {
+        width: 100%;
+    }
+
+    .keypoint .key_container .key_content,
+    .keypoint .key_container .key_img {
+        width: 100%;
+    }
+
+    .team .team_container .team_video,
+    .team .team_container .team_content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_side {
+        margin-top: 10px;
+        margin-left: 50px;
+
+    }
+
+    .nav_side a {
+        margin-left: 5%;
+        /* margin-bottom: 10px; */
+    }
+    .main .main_content {
+        padding-top: 40%;
+    }
+
+    .main .main_content h2 {
+        font-size: 30px;
+    }
+
+    .main .main_content .btn a {
+        margin: 0;
+    }
+
+    .product .product_container {
+        flex-direction: column;
+    }
+
+    .product .product_container .item {
+        width: 100%;
+    }
+
+    .keypoint .key_container {
+        flex-direction: column;
+    }
+
+    .keypoint .key_container .key_content {
+        width: 100%;
+    }
+    .keypoint .key_container .key_img {
+        display: none;
+    }
+
+
+    .team .team_container {
+        flex-direction: column;
+    }
+
+    .team .team_container .team_video{
+        display: none;
+    }
+    .team .team_container .team_content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main .main_content {
+        padding-top: 50%;
+    }
+
+    .main .main_content h2 {
+        font-size: 25px;
+    }
+
+    .product .product_container .item .item_content h3 {
+        font-size: 20px;
+    }
+
+    .product .product_container .item .item_content p {
+        font-size: 13px;
+    }
+
+    .feed .feed_form form input,
+    .feed .feed_form form textarea,
+    .feed .feed_form form button {
+        width: 80%;
+    }
+}
