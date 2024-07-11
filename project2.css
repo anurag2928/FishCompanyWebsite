@@ -1,5 +1,5 @@
 .nav{
-    background-color: white;
+    background-color: #99A3A4;
     z-index: 9;
     /* padding: 10px; */
     padding-left: 50px;
@@ -423,7 +423,7 @@ footer .pages a{
     font-family: Arial, Helvetica, sans-serif;
 }
 footer .pages a:hover{
-    color: white;
+    color: snow;
 }
 
 footer .doc{
@@ -443,7 +443,7 @@ footer .doc a{
     font-family: Arial, Helvetica, sans-serif;
 }
 footer .doc a:hover{
-    color: white;
+    color: snow;
 }
 
 footer .social{
@@ -462,7 +462,7 @@ footer .social a{
     margin: 10px;
 }
 footer .social a:hover{
-    color: white;
+    color: snow;
 }
 
 footer .contact{
@@ -481,7 +481,7 @@ footer .contact a{
     margin: 10px;
 }
 footer .contact a:hover{
-    color: white;
+   color: snow;
 }
 footer p{
     text-align: center;
